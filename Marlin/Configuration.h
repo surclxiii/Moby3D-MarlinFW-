@@ -1760,11 +1760,11 @@
 #define Y_BED_SIZE 225
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
-#define X_MIN_POS -21 //-20 default, -22 was working
-#define Y_MIN_POS -12
+#define X_MIN_POS -21 //-20 default, -22 was working, use -21now
+#define Y_MIN_POS -12 // concerned binderclips
 #define Z_MIN_POS 0
-#define X_MAX_POS X_BED_SIZE
-#define Y_MAX_POS Y_BED_SIZE 
+#define X_MAX_POS 235
+#define Y_MAX_POS 216 // binder clips
 #define Z_MAX_POS 250
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
@@ -2053,7 +2053,7 @@
 
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 10              // Updated from 19 on 3/5
+  #define MESH_INSET 1              // Updated from 19 on 3/5
   #define GRID_MAX_POINTS_X 7      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
