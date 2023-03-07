@@ -3787,11 +3787,11 @@
   #define CUSTOM_MENU_MAIN_ONLY_IDLE         // Only show custom menu when the machine is idle
   
   #define MAIN_MENU_ITEM_1_DESC "Z-offset for " PREHEAT_1_LABEL //PLA
-  #define MAIN_MENU_ITEM_1_GCODE "M851 Z-1.85"
+  #define MAIN_MENU_ITEM_1_GCODE "M851 Z-1.85\nG28"
   #define MAIN_MENU_ITEM_1_CONFIRM
   
   #define MAIN_MENU_ITEM_2_DESC "Z-offset for " PREHEAT_2_LABEL //PETG
-  #define MAIN_MENU_ITEM_2_GCODE "M851 Z-0.85"
+  #define MAIN_MENU_ITEM_2_GCODE "M851 Z-0.85\nG28"
   #define MAIN_MENU_ITEM_2_CONFIRM
   
   //#define MAIN_MENU_ITEM_1_DESC "Home & UBL Info"
