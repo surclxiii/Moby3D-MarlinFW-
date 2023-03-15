@@ -138,7 +138,7 @@
 //#define BLUETOOTH
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Moby3D (1.1B)"
+#define CUSTOM_MACHINE_NAME "Moby3D (1.2)"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -1546,7 +1546,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -39, -10, -1.85 }
+#define NOZZLE_TO_PROBE_OFFSET { -39, -10, -1.725 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1757,11 +1757,11 @@
 
 // The size of the printable area
 #define X_BED_SIZE 235 // 225
-#define Y_BED_SIZE 215 // 225
+#define Y_BED_SIZE 235 // 215
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS -21 //-20 default, -22 was working, use -21now
-#define Y_MIN_POS -12 // concerned binderclips
+#define Y_MIN_POS -2 // -12concerned binderclips
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE //235
 #define Y_MAX_POS Y_BED_SIZE //216
@@ -2053,7 +2053,7 @@
 
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 12              // Updated from 19 on 3/5
+  #define MESH_INSET 3              // Updated from 19 on 3/5 ; 12 on 3/14
   #define GRID_MAX_POINTS_X 7      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
