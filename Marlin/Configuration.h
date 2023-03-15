@@ -670,9 +670,9 @@
     #define DEFAULT_Ki_LIST {   2.50,   2.50 }
     #define DEFAULT_Kd_LIST {  66.64,  66.64 }
   #else
-    #define DEFAULT_Kp  23.57 //Tune for 215 on 3/4/23
-    #define DEFAULT_Ki   2.36
-    #define DEFAULT_Kd  58.93
+    #define DEFAULT_Kp  25.57 //Tune for 210 on 3/14/23
+    #define DEFAULT_Ki   2.58
+    #define DEFAULT_Kd  63.40
   #endif
 #endif
 
@@ -755,9 +755,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 152.01 //Tune for 63 on 3/4/23
-  #define DEFAULT_bedKi  29.69
-  #define DEFAULT_bedKd 518.87
+  #define DEFAULT_bedKp 177.64 //Tune for 65 on 3/14/23
+  #define DEFAULT_bedKi  34.69
+  #define DEFAULT_bedKd 606.33
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -2053,7 +2053,7 @@
 
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 3              // Updated from 19 on 3/5 ; 12 on 3/14
+  #define MESH_INSET 0              // Updated from 19 on 3/5 ; 12 on 3/14
   #define GRID_MAX_POINTS_X 7      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
